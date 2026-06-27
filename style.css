@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  color: white;
+  background-color:  hsl(0, 0%, 95%);
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
+  line-height: 25px; 
+  font-family: "Lexend Deca";
+  margin-bottom: 70px
+}
+
+h1 + button {
+  color:  hsl(0, 0%, 95%);
+  font-family: "Big Shoulders"
+}
+
+h1 {
+  text-decoration: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: "Big Shoulders";
+  font-weight: 700;
+  letter-spacing: 1px;
+  transform: scaley(1.2);
+}
+
+div [class*=button] {
+  position: relative;
+  bottom: 0;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 30px;
+  width: 70%;
+  height: 50px;
+  border-style: none;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: "Lexend Deca"
+}
+
+.container {
+  display: flex;
+}
+
+
+.button_1 {
+    color: hsl(31, 77%, 52%);
+}
+
+.button_2 {
+  color: hsl(184, 100%, 22%)
+}
+
+.button_3 {
+  color: hsl(179, 100%, 13%);
+}
+
+div [class*=box] {
+  width: 300px;
+  padding: 50px 25px 50px 50px;
+  position: static;
+}
+
+.first_box {
+    background-color: hsl(31, 100%, 52%);
+      border-radius: 10px 0 0 10px;
+}
+
+.second_box {
+  background-color: hsl(184, 100%, 20%);
+}
+
+.third_box {
+  background-color: hsl(165, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+
+div [class*=button]:hover {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border: 3px solid white;
+}
+
+@media (max-width: 375px){
+  .container {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px
+  }
+  div[class*=box] {
+    border-radius: 0
+  }
+}
